@@ -15,11 +15,11 @@ import arcade
 # --- Constants ---
 SPRITE_SCALING_PLAYER = .02
 SPRITE_SCALING_COIN = .05
-COIN_COUNT = 50
+COIN_COUNT = random.randint(40, 70)
 
 SCREEN_WIDTH = 1200
 SCREEN_HEIGHT = 600
-SCREEN_TITLE = "Money Collector"
+SCREEN_TITLE = "Swamp protector"
 
 
 class MyGame(arcade.Window):
