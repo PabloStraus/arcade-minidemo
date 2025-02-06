@@ -13,13 +13,13 @@ import random
 import arcade
 
 # --- Constants ---
-SPRITE_SCALING_PLAYER = .02
-SPRITE_SCALING_COIN = .05
+SPRITE_SCALING_PLAYER = .04
+SPRITE_SCALING_COIN = .03
 COIN_COUNT = random.randint(40, 70)
 
 SCREEN_WIDTH = 1200
-SCREEN_HEIGHT = 600
-SCREEN_TITLE = "Swamp protector"
+SCREEN_HEIGHT = 700
+SCREEN_TITLE = "Shark game"
 
 
 class MyGame(arcade.Window):
@@ -41,7 +41,7 @@ class MyGame(arcade.Window):
         # Don't show the mouse cursor
         self.set_mouse_visible(False)
 
-        arcade.set_background_color(arcade.color.AMAZON)
+        arcade.set_background_color(arcade.color.DARK_IMPERIAL_BLUE)
 
     def setup(self):
         """ Set up the game and initialize the variables. """
@@ -55,7 +55,7 @@ class MyGame(arcade.Window):
 
         # Set up the player
         # Character image from kenney.nl
-        img = r"C:\Users\pablo\Downloads\pngimg.com - shrek_PNG2.png"
+        img = r"C:\Users\pablo\Downloads\pngimg.com - shark_PNG18832.png"
         self.player_sprite = arcade.Sprite(img, SPRITE_SCALING_PLAYER)
         self.player_sprite.center_x = 50
         self.player_sprite.center_y = 50
@@ -66,7 +66,7 @@ class MyGame(arcade.Window):
 
             # Create the coin instance
             # Coin image from kenney.nl
-            coin = arcade.Sprite(r"C:\Users\pablo\Downloads\child-emoji-clipart-md.png",
+            coin = arcade.Sprite(r"C:\Users\pablo\Downloads\pngimg.com - fish_PNG25154.png",
                                  SPRITE_SCALING_COIN)
 
             # Position the coin
